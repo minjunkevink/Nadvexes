@@ -2,8 +2,14 @@ from gensim.models import Word2Vec
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
-# Load a pre-trained model
-model = Word2Vec.load("path/to/word2vec/model")
+# You would ideally load a pre-trained model here
+# but I am directly trainning my model here 
+# If any of yall want to try a pre-trained model, the code would look like this:
+# model = Word2Vec.load("path to model")
+
+# First, I am going to load some nadvex examples: 
+model = 
+
 
 def sentence_to_vec(sentence, model):
     words = sentence.split()
